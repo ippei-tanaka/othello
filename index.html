@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Othello</title>
+    <!--[if lt IE 9]><script src="scripts/lib/html5shiv.js"></script><![endif]-->
+    <script data-main="scripts/main.js" src="scripts/lib/require.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-2990082-2']);
+		_gaq.push(['_trackPageview']);
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</head>
+<body>
+    <div id="loading-container">
+        <div id="loading">
+            <p class="message"></p>
+        </div>
+    </div>
+    <div id="title-container">
+        <div id="title">
+            <h1></h1>
+            <p>Click to Play</p>
+        </div>
+    </div>
+    <div id="menu-container">
+        <div id="menu">
+            <h2 class="dark">Player1</h2>
+            <ul class="brain">
+                <li><label><input type="radio" name="player1" value="human" />Human</label></li>
+                <li><label><input type="radio" name="player1" value="computer" />Computer</label></li>
+            </ul>
+            <h2 class="light">Player2</h2>
+            <ul class="brain">
+                <li><label><input type="radio" name="player2" value="human" />Human</label></li>
+                <li><label><input type="radio" name="player2" value="computer" />Computer</label></li>
+            </ul>
+            <p id="start-button"><span>Start Game</span></p>
+        </div>
+    </div>
+    <div id="board-container">
+        <p id="massage"></p>
+        <p id="play-again">Play again?</p>
+        <div id="board">
+            <div id="tiles">
+                <table>
+                    <tr> <td><div></div></td> <td><div></div></td> <td><div></div></td> <td><div></div></td> <td><div></div></td> <td><div></div></td> <td><div></div></td> <td><div></div></td> </tr>
+                    <tr> <td><div></div></td> <td><div></div></td> <td><div></div></td> <td><div></div></td> <td><div></div></td> <td><div></div></td> <td><div></div></td> <td><div></div></td> </tr>
+                    <tr> <td><div></div></td> <td><div></div></td> <td><div></div></td> <td><div></div></td> <td><div></div></td> <td><div></div></td> <td><div></div></td> <td><div></div></td> </tr>
+                    <tr> <td><div></div></td> <td><div></div></td> <td><div></div></td> <td><div></div></td> <td><div></div></td> <td><div></div></td> <td><div></div></td> <td><div></div></td> </tr>
+                    <tr> <td><div></div></td> <td><div></div></td> <td><div></div></td> <td><div></div></td> <td><div></div></td> <td><div></div></td> <td><div></div></td> <td><div></div></td> </tr>
+                    <tr> <td><div></div></td> <td><div></div></td> <td><div></div></td> <td><div></div></td> <td><div></div></td> <td><div></div></td> <td><div></div></td> <td><div></div></td> </tr>
+                    <tr> <td><div></div></td> <td><div></div></td> <td><div></div></td> <td><div></div></td> <td><div></div></td> <td><div></div></td> <td><div></div></td> <td><div></div></td> </tr>
+                    <tr> <td><div></div></td> <td><div></div></td> <td><div></div></td> <td><div></div></td> <td><div></div></td> <td><div></div></td> <td><div></div></td> <td><div></div></td> </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

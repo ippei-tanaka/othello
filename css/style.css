@@ -1,0 +1,421 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input, select {
+    vertical-align: middle;
+}
+
+/****************************************************/
+/****************************************************/
+
+html {
+    height: 100%;
+    background: #000;
+}
+
+body {
+    background: #000 no-repeat center center;
+    font-size: 16px;
+    font-family: 'Tahoma', sans-serif;
+    height: 100%;
+    position: relative;
+
+    min-height: 700px;
+    min-width: 700px;
+}
+/*
+body {
+    background-image: url("../images/bg_body.jpg");
+}
+
+#board {
+    background-image: url("../images/bg_board.png");
+}
+*/
+
+/*-------------------------------------------------------*/
+
+#loading-container {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center center #000;
+    position: absolute;
+    z-index: 150;
+    min-height: 700px;
+    min-width: 700px;
+}
+
+#loading-container.now-loading {
+    background-image: url("../images/loader.gif");
+}
+
+#loading-container.finish-loading {
+    background-image: url("../images/loader-finished.gif");
+}
+
+#loading {
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -350px;
+    margin-left: -350px;
+}
+
+#loading p.message {
+    position: absolute;
+    top : 370px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    width: 100%;
+    line-height: 1.7;
+}
+
+/*-------------------------------------------------------*/
+
+#title-container {
+    width: 100%;
+    height: 100%;
+   /* background: url("../images/bg_title.png");*/
+    position: relative;
+    z-index: 100;
+    cursor: pointer;
+    min-height: 700px;
+    min-width: 700px;
+}
+
+#title {
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -350px;
+    margin-left: -350px;
+}
+
+#title h1 {
+    position: absolute;
+    top : 297px;
+    width: 100%;
+    text-align: center;
+}
+
+#title p {
+    position: absolute;
+    top : 408px;
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+    width: 100%;
+}
+
+/*-------------------------------------------------------*/
+
+#menu-container {
+    width : 300px;
+    height: 300px;
+   /* background: url("../images/bg-menu.png");*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -150px;
+    z-index: 40;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    display: none;
+}
+
+#menu-container #menu {
+    padding: 42px 0 0 50px;
+}
+
+#menu-container #menu h2 {
+    color: #fff;
+    font-size: 20px;
+    background: no-repeat right center;
+    display: inline-block;
+    padding-right: 26px;
+    margin-bottom: 17px;
+    font-weight: normal;
+}
+
+#menu-container #menu h2.dark {
+    /*background-image: url("../images/icon_piece_dark.png");*/
+}
+
+#menu-container #menu h2.light {
+    /*background-image: url("../images/icon_piece_light.png");*/
+}
+
+#menu-container #menu ul {
+    list-style: none;
+    margin-bottom: 38px;
+}
+
+#menu-container #menu ul li {
+    display: inline-block;
+    padding-right: 18px;
+}
+
+#menu-container #menu ul li label {
+    line-height: 0;
+    font-size: 17px;
+    vertical-align: middle;
+    cursor: pointer;
+    color: #888;
+}
+
+#menu-container #menu ul li label.checked {
+    color : #fff;
+}
+
+#menu-container #menu ul li label:hover {
+    color: #fff;
+}
+
+#menu-container #menu ul li label input {
+    margin: 0 3px 0 0;
+    padding: 0;
+    vertical-align: middle;
+}
+
+#menu-container #menu p#start-button {
+    text-align: center;
+    padding-right: 50px;
+}
+
+#menu-container #menu p#start-button span {
+    font-size: 20px;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 26px;
+/*    background: url("../images/bg-menu.png");*/
+    cursor: pointer;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#menu-container #menu p#start-button span:hover {
+    color: #fff;
+    background: #000;
+}
+
+/*-------------------------------------------------------*/
+
+#board-container {
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -350px;
+    margin-left: -350px;
+    z-index: 0;
+}
+
+#board {
+    width: 664px;
+    height: 664px;
+    background: no-repeat top left;
+    color: #f44;
+    font-weight: bold;
+    position: absolute;
+    top: 25px;
+    left: 18px;
+}
+
+#tiles{
+    padding-left: 30px;
+    padding-top: 32px;
+}
+
+#tiles table {
+}
+
+#tiles table td {
+    height: 75px;
+    width: 75px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#tiles table td div {
+    height: 75px;
+    width: 75px;
+    position: relative;
+}
+
+#tiles table td span {
+    height: 75px;
+    width: 75px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: 3px 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#tiles table td span.dark {
+/*    background-image: url("../images/piece_dark.png");*/
+}
+#tiles table td span.light {
+/*    background-image: url("../images/piece_light.png");*/
+}
+#tiles table td span.dark-guide {
+/*    background-image: url("../images/piece_dark.png");*/
+    cursor: pointer;
+}
+#tiles table td span.light-guide {
+/*    background-image: url("../images/piece_light.png");*/
+    cursor: pointer;
+}
+
+#massage {
+    color: #fff;
+    position: absolute;
+    z-index: 10;
+    left: 24px;
+    top: 0;
+    font-size: 17px;
+}
+
+#massage strong {
+    font-weight: bold;
+}
+#massage span.small {
+    font-size: 12px;
+}
+#massage span.icon {
+    display: block;
+    height: 25px;
+    width: 25px;
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: absolute;
+    top: -5px;
+    right: -26px;
+}
+#massage span.icon.dark {
+/*    background-image: url("../images/icon_piece_dark.png");*/
+}
+#massage span.icon.light {
+/*    background-image: url("../images/icon_piece_light.png");*/
+    background-position: 0 1px;
+}
+
+
+#play-again {
+    color: #fff;
+    position: absolute;
+    z-index: 10;
+    right: 28px;
+    top: 0;
+    font-size: 17px;
+    cursor: pointer;
+    display: none;
+}
+
+#play-again:hover {
+    color: #aaa;
+}

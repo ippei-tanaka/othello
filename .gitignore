@@ -1,0 +1,10 @@
+.project
+.settings/
+target/
+.gitignore~
+.classpath
+nbproject/
+.idea/
+*.iml
+bin/
+gen/
