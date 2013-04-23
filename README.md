@@ -1,3 +1,3 @@
 othello
 =======
-You can play the game here.  [google]: http://google.com/        "Google"
+You can play this game [HERE](http://ro-bin.com/pf/).
